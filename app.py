@@ -13,7 +13,7 @@ import os
 app = FastAPI()
 
 # Load the dataset (assuming 'data_mask.csv' is in the same directory)
-brain_df = pd.read_csv('../api/data_mask.csv')
+brain_df = pd.read_csv('data_mask.csv')
 
 # Root endpoint
 @app.get("/")
