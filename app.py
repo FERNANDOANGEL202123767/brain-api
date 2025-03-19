@@ -18,7 +18,7 @@ brain_df = pd.read_csv('data_mask.csv')
 # Root endpoint
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the Brain MRI API. Use /image/{index} to get an MRI image and mask."}
+    return {"message": "Bienvenido a la API de Brain MRI. Usa /image/{index} para obtener una imagen de MRI y su máscara."}
 
 # Endpoint to serve a random MRI image and mask or a specific one by index
 @app.get("/image/{index}")
